@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Alina Anisimova](https://up.htmlacademy.ru/adaptive/20/user/1447027).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная].
 
 ---
 

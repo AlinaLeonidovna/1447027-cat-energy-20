@@ -3,250 +3,270 @@
 <head>
   <meta charset="UTF-8">
   <title>Интернет-магазин фитнес еды для котиков «Кэт энерджи»</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo logo" href="index.html">
-      <img class="logo__img" src="https://via.placeholder.com/33x38" width="33" height="38" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
-      <img class="logo__text" src="https://via.placeholder.com/101x18" width="101" height="18" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a class="main-nav__link">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <a class="page-header__logo logo" href="index.html">
+        <img class="logo__img" src="https://via.placeholder.com/189x38" width="189" height="38" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
+    <div class="container">
+      <h1 class="page-main__title">Каталог продукции</h1>
 
-    <section class="main-products">
-      <h2 class="visually-hidden">Основные товары</h2>
-      <ul class="main-products__list">
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Pro» маленького объема в оранжевом цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy pro 500 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">500 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product_name">Вкус</dt>
-                <dd class="card-main-product__description">Курица</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">700 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Упаковка с кормом из серии «Cat Energy Pro» большого объема в оранжевом цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy pro 1000 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">1000 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Вкус</dt>
-                <dd class="card-main-product__description">Курица</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">1000 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Pro» маленького объема в зеленом цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy pro 500 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">500 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product_name">Вкус</dt>
-                <dd class="card-main-product__description">Рыба</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">700 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Упаковка с кормом из серии «Cat Energy Pro» большого объема в зеленом цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy pro 1000 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">1000 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Вкус</dt>
-                <dd class="card-main-product__description">Рыба</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">1000 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Slim» маленького объема в синем цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy slim 500 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">500 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Вкус</dt>
-                <dd class="card-main-product__description">Гречка</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">700 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Упаковка с кормом из серии «Cat Energy Slim» большого объема в синем цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy slim 1000 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">1000 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Вкус</dt>
-                <dd class="card-main-product__description">Гречка</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">1000 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <a class="card-main-product__img" href="#">
-              <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Slim» маленького объема в фиолетовом цвете.">
-            </a>
-            <h3 class="card-main-product__title"><a href="#">Cat energy slim 500 г</a></h3>
-            <dl class="card-main-product__list">
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Объем</dt>
-                <dd class="card-main-product__description">500 г</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Вкус</dt>
-                <dd class="card-main-product__description">Рис</dd>
-              </div>
-              <div class="card-main-product__item">
-                <dt class="card-main-product__name">Цена</dt>
-                <dd class="card-main-product__description">700 р.</dd>
-              </div>
-            </dl>
-            <a class="card-main-product__to-order button" href="#">Заказать</a>
-          </article>
-        </li>
-        <li class="main-products__item">
-          <article class="main-products__card card-main-product">
-            <h3 class="card-main-product__title">Показать еще 100500 товаров</h3>
-            <p class="card-main-product__text">На самом деле вкусов гораздо больше!</p>
-            <a class="card-main-product__to-show button button--show" href="#">Показать все</a>
-          </article>
-        </li>
-      </ul>
-    </section>
+      <section class="main-products">
+        <h2 class="visually-hidden">Основные товары</h2>
+        <ul class="main-products__list">
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Pro» маленького объема в оранжевом цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy pro 500 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">500 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product_name">Вкус</dt>
+                  <dd class="card-main-product__description">Курица</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">700 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Упаковка с кормом из серии «Cat Energy Pro» большого объема в оранжевом цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy pro 1000 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">1000 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Вкус</dt>
+                  <dd class="card-main-product__description">Курица</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">1000 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Pro» маленького объема в зеленом цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy pro 500 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">500 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product_name">Вкус</dt>
+                  <dd class="card-main-product__description">Рыба</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">700 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Упаковка с кормом из серии «Cat Energy Pro» большого объема в зеленом цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy pro 1000 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">1000 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Вкус</dt>
+                  <dd class="card-main-product__description">Рыба</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">1000 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Slim» маленького объема в синем цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy slim 500 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">500 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Вкус</dt>
+                  <dd class="card-main-product__description">Гречка</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">700 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/84x101" width="84" height="101" alt="Упаковка с кормом из серии «Cat Energy Slim» большого объема в синем цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy slim 1000 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">1000 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Вкус</dt>
+                  <dd class="card-main-product__description">Гречка</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">1000 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <a class="card-main-product__link" href="#">
+                <img src="https://via.placeholder.com/68x86" width="68" height="86" alt="Упаковка с кормом из серии «Cat Energy Slim» маленького объема в фиолетовом цвете.">
+              </a>
+              <h3 class="card-main-product__title">
+                <a class="card-main-product__title-link" href="#">Cat energy slim 500 г</a>
+              </h3>
+              <dl class="card-main-product__list">
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Объем</dt>
+                  <dd class="card-main-product__description">500 г</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Вкус</dt>
+                  <dd class="card-main-product__description">Рис</dd>
+                </div>
+                <div class="card-main-product__item">
+                  <dt class="card-main-product__name">Цена</dt>
+                  <dd class="card-main-product__description">700 р.</dd>
+                </div>
+              </dl>
+              <a class="card-main-product__to-order button" href="#">Заказать</a>
+            </article>
+          </li>
+          <li class="main-products__item">
+            <article class="main-products__card card-main-product">
+              <h3 class="card-main-product__title card-main-product__title--all-products">Показать еще 100500 товаров</h3>
+              <p class="card-main-product__text">На самом деле вкусов гораздо больше!</p>
+              <a class="card-main-product__to-show button button--show" href="#">Показать все</a>
+            </article>
+          </li>
+        </ul>
+      </section>
 
-    <section class="additional-products">
-      <h2 class="additional-products__title">Дополнительные товары</h2>
-      <!-- Здесь будут дополнительные товары -->
-    </section>
+      <section class="additional-products">
+        <h2 class="additional-products__title">Дополнительные товары</h2>
+        <!-- Здесь будут дополнительные товары -->
+      </section>
 
-    <section class="stock">
-      <h2 class="visually-hidden">Акционное предложение</h2>
-      <!-- Здесь будет акционное предложение -->
-    </section>
+      <section class="stock">
+        <h2 class="visually-hidden">Акционное предложение</h2>
+        <!-- Здесь будет акционное предложение -->
+      </section>
+    </div>
   </main>
 
   <footer class="page-footer">
     <div class="contacts">
       <!-- Здесь будет карта -->
     </div>
-    <a class="page-footer__logo">
-      <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-        <b class="copyright__text">HTML Academy</b>
-        <span class="visually-hidden copyright__img">Логотип HTML Academy</span>
+    <div class="container">
+      <a class="page-footer__logo">
+        <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
       </a>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"><span class="visually-hidden">Мы в Инстаграме</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Мы в Фейсбуке</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <b class="copyright__text">HTML Academy</b>
+          <span class="visually-hidden copyright__img">Логотип HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -2,6 +2,20 @@
   padding-top: 39px;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__social {
+  min-height: 60px;
+}
+
 .page-footer__copyright {
   margin-bottom: 22px;
 }

@@ -1,16 +1,46 @@
 .main-nav {
+  width: 24px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   font-family: @title-font;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 440px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 478px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
+  display: none;
   margin: 0;
   padding: 0;
   text-align: center;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__link {

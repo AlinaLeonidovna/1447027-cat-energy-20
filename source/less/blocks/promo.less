@@ -2,17 +2,23 @@
   margin-bottom: 22px;
 }
 
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .promo__background {
+  position: relative;
+  margin: 0 auto;
   padding-top: 27px;
 
-  // background-color: #68b738;
+  // background-color: @bg-button;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .promo__title {
-  margin: 0;
   margin-bottom: 25px;
 
   font-weight: 400;
@@ -34,6 +40,10 @@
   color: @basic-white;
   text-transform: uppercase;
   text-align: center;
+}
+
+.promo__img {
+  margin: 0 auto;
 }
 
 .promo__selection-program {

@@ -2,11 +2,11 @@
   margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin-bottom: 6px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 16px;
+    margin-bottom: 26px;
   }
 }
 
@@ -21,10 +21,8 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
-    align-content: stretch;
   }
 }
 
@@ -50,9 +48,16 @@
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-bottom: 40px;
+    margin-right: 80px;
     padding-top: 68px;
     padding-right: 51px;
     padding-bottom: 58px;
     padding-left: 52px;
+  }
+}
+
+.programs__item:nth-child(2n) {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }

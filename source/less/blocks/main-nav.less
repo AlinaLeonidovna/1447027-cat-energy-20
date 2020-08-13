@@ -1,5 +1,5 @@
 .main-nav {
-  width: 24px;
+  position: relative;
 
   font-weight: 500;
   font-size: 20px;
@@ -24,9 +24,51 @@
 }
 
 .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  background-color: @basic-white;
+  border: none;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @basic-black;
+  box-shadow: 0 8px 0 0 @basic-black, 0 16px 0 0 @basic-black;
+}
+
+
+.main-nav--opened .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: @basic-black;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: @basic-black;
+  transform: rotate(-45deg);
 }
 
 .main-nav__list {
@@ -43,10 +85,25 @@
   }
 }
 
+.main-nav__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @bg-green;
+  }
+
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid @basic-white;
+  }
+}
+
 .main-nav__link {
   display: inline-block;
   width: 100%;
-  padding: 22px 0;
+  padding: 9px 0;
 
   color: @basic-black;
+
+  @media (min-width: @desktop-width) {
+    padding: 6px 0;
+    color: @basic-white;
+  }
 }

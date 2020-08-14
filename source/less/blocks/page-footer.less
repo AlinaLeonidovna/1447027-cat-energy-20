@@ -81,11 +81,17 @@
 }
 
 .page-footer__map {
-  height: 400px;
+  line-height: 0;
 }
 
 .page-footer__map iframe {
+  width: 100%;
+
   border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .page-footer__wrapper {
@@ -110,6 +116,7 @@
 .page-footer__logo {
   margin: 0 auto;
   padding: 23px 76px;
+  padding-top: 29px;
   border-bottom: 1px solid @light-grey;
 
   @media (min-width: @tablet-width) {

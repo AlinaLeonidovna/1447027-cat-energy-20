@@ -1,17 +1,17 @@
 .promo {
   margin-bottom: 22px;
 
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat top center;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to bottom, @bg-promo 0, @bg-promo 305px, @basic-white 305px, @basic-white 100%);
 
   @media (min-width: @tablet-width) {
-    min-height: 815px;
+    height: 815px;
     margin-bottom: 28px;
 
     background: @basic-white;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: auto;
+    height: auto;
     background: transparent;
   }
 }
@@ -60,7 +60,7 @@
 
 .promo__slogan {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 26px;
 
   font-weight: 400;
   font-size: 14px;
@@ -88,9 +88,10 @@
 
 .promo__img {
   margin: 0 auto;
-  margin-top: -3px;
+  margin-bottom: 3px;
 
   width: 280px;
+  vertical-align: top;
 
   @media (min-width: @tablet-width) {
     width: 708px;
@@ -110,7 +111,7 @@
   @media (min-width: @tablet-width) {
     width: 244px;
     margin-left: 82px;
-    margin-top: -583px;
+    margin-top: -581px;
   }
 
   @media (min-width: @desktop-width) {

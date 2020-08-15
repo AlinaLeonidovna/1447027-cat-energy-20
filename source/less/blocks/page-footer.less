@@ -1,5 +1,97 @@
 .page-footer {
-  padding-top: 39px;
+  background-color: @basic-grey;
+}
+
+.page-footer__contacts {
+  background-color: @basic-white;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
+
+.page-footer__cover {
+  display: flex;
+  justify-content: space-between;
+  min-height: 114px;
+  padding-top: 28px;
+
+  background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    min-height: 201px;
+    padding-top: 65px;
+    padding-right: 41px;
+    padding-left: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    top: 95px;
+
+    width: 570px;
+    padding-right: 84px;
+    padding-left: 76px;
+  }
+}
+
+.page-footer__call {
+  width: 140px;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: @title-font;
+  color: @dark-grey-1;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.page-footer__address {
+  width: 140px;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: @dark-grey-4;
+
+  @media (min-width: @tablet-width) {
+    text-align: end;
+    width: 159px;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.page-footer__street {
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.page-footer__map {
+  line-height: 0;
+}
+
+.page-footer__map iframe {
+  width: 100%;
+
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    height: 400px;
+  }
 }
 
 .page-footer__wrapper {
@@ -8,14 +100,53 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 57px;
+    padding-bottom: 50px;
+  }
+}
+
+.page-footer__logo {
+  margin: 0 auto;
+  padding: 23px 76px;
+  padding-top: 29px;
+  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-right: 156px;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 413px;
   }
 }
 
 .page-footer__social {
-  min-height: 60px;
+  padding-top: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+    padding: 0;
+    border: none;
+  }
 }
 
 .page-footer__copyright {
-  margin-bottom: 22px;
+  padding: 22px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }

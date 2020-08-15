@@ -1,7 +1,56 @@
+.page-header {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+
+.page-header--form {
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
 .page-header__wrapper {
+  @media (min-width: @desktop-width) {
+    min-height: 694px;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat bottom right, linear-gradient(to right, @basic-white 0, @basic-white 50%, @bg-promo 50%, @bg-promo 100%);
+  }
+}
+
+.page-header__wrapper--catalog,
+.page-header__wrapper--form {
+  @media (min-width: @desktop-width) {
+    min-height: 60px;
+    background: @basic-white;
+  }
+}
+
+.page-header__wrap {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 10px;
+}
+
+.page-header__wrapper-header {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 42px 0;
+    width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .page-header__logo {
@@ -14,4 +63,56 @@
   @media (min-width: @desktop-width) {
     width: 202px;
   }
+}
+
+.page-header__toggle {
+  position: relative;
+
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  cursor: pointer;
+  background-color: @basic-white;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__burger,
+.page-header__burger::before,
+.page-header__burger::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: @basic-black;
+}
+
+.page-header__burger::before,
+.page-header__burger::after {
+  content: "";
+}
+
+.page-header__burger::before {
+  transform: translateY(-8px);
+}
+
+.page-header__burger::after {
+  transform: translateY(8px);
+}
+
+.page-header__toggle--active .page-header__burger {
+  height: 0;
+}
+
+.page-header__toggle--active .page-header__burger::before {
+  transform: rotate(45deg);
+}
+
+.page-header__toggle--active .page-header__burger::after {
+  transform: rotate(-45deg);
 }

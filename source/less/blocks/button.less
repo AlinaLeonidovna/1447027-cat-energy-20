@@ -11,15 +11,22 @@
   text-align: center;
   text-transform: uppercase;
 
-  background-color: @bg-button;
+  background-color: @bg-green;
   border: none;
 }
 
 .button--selection {
   font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 10px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .button--show {
-  color: @special-dark-grey;
+  color: @dark-grey-4;
   background-color: @basic-grey;
 }

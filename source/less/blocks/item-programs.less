@@ -1,4 +1,65 @@
+.item-programs {
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    position: relative;
+  }
+}
+
+.item-programs::before {
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    content: "";
+    position: absolute;
+    top: 92px;
+    right: 62px;
+
+    width: 200px;
+    height: 200px;
+
+    background-color: @bg-green;
+    border-radius: 50%;
+  }
+}
+
+.item-programs--thin {
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    padding-right: 315px;
+  }
+}
+
+.item-programs--thick::after {
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    content: "";
+    position: absolute;
+    top: 81px;
+    right: 92px;
+
+    width: 140px;
+    height: 192px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.item-programs--thin::after {
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    content: "";
+    position: absolute;
+    top: 135px;
+    right: 28px;
+
+    width: 268px;
+    height: 112px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
 .item-programs__title {
+  position: relative;
+
   margin: 0;
   margin-bottom: 29px;
   padding-left: 71px;
@@ -8,24 +69,165 @@
   line-height: 37px;
   font-family: @title-font;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 72px;
+    padding-left: 162px;
+  }
+}
+
+.item-programs__title::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 2px;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: @bg-green;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -28px;
+    left: 0;
+
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.item-programs--thick .item-programs__title::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 9px;
+
+  width: 36px;
+  height: 50px;
+
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -34px;
+    left: 15px;
+
+    width: 70px;
+    height: 97px;
+  }
+}
+
+.item-programs--thin .item-programs__title::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -7px;
+
+  width: 67px;
+  height: 28px;
+
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) and (max-width: 1299px) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -8px;
+    left: -19px;
+
+    width: 134px;
+    height: 56px;
+  }
 }
 
 .item-programs__description {
+  position: relative;
+
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+  padding-bottom: 22px;
 
   font-size: 14px;
   line-height: 18px;
-  color: @special-dark-grey;
+  color: @dark-grey-4;
+
+  border-bottom: 1px solid @light-grey;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: @basic-black;
+
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+  }
 }
 
 .item-programs__link {
+  position: relative;
+
   display: inline-block;
+  padding-right: 52px;
 
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 24px;
   font-family: @title-font;
   color: @basic-black;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.item-programs__link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+
+  width: 24px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-arrow-long.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: @tablet-width) {
+    right: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 0;
+  }
 }

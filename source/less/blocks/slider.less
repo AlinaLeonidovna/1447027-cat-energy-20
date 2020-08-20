@@ -1,0 +1,153 @@
+.slider__img {
+  position: relative;
+
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    height: 517px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.slider__cat {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0 auto;
+
+    vertical-align: top;
+  }
+}
+
+.slider__cat--before,
+.slider__cat--after {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 690px;
+  }
+}
+
+.slider__cat--before {
+  @media (min-width: @tablet-width) {
+    clip: rect(auto, 345px, auto, auto);
+  }
+
+  @media (min-width: @desktop-width) {
+    clip: rect(auto, 365px, auto, auto);
+  }
+}
+
+.slider__cat--after {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    clip: rect(auto, auto, auto, 345px);
+  }
+
+  @media (min-width: @desktop-width) {
+    clip: rect(auto, auto, auto, 365px);
+  }
+}
+
+.slider__filter {
+  margin-right: inherit;
+}
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 208px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 570px;
+  }
+}
+
+.slider__toggle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: @title-font;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    border-bottom: 1px dotted @basic-black-opacity-four;
+  }
+}
+
+.slider__range {
+  width: 84px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+
+    border-radius: 6px;
+    background-color: #dcdcdc;
+  }
+}
+
+.slider__scale {
+  position: relative;
+  width: 84px;
+  height: 14px;
+
+  background-color: @basic-white;
+  border: 1px solid @light-grey-4;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: calc(50% - 17px);
+    left: calc(50% - 17px);
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.slider__bar {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: @bg-green;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    top: calc(50% - 4px);
+    left: calc(50% - 4px);
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+  }
+}

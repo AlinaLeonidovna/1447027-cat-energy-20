@@ -26,12 +26,20 @@
     column-gap: 60px;
     row-gap: 30px;
     align-items: end;
+
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
     row-gap: 28px;
+
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
@@ -63,11 +71,17 @@
 .main-products__card {
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
     padding-right: 37px;
     padding-left: 37px;
     padding-bottom: 39px;
+
+    margin: 0;
+    width: auto;
 
     background-image: linear-gradient(to top, @basic-grey 430px, @basic-white 430px);
   }

@@ -207,17 +207,33 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:hover::after,
+  &:focus::after {
+    right: -8px;
+
+    width: 32px;
+    height: 10px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.item-programs__link::before {
+.item-programs__link::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: 13px;
+  right: 0;
   transform: translateY(-50%);
 
   width: 24px;
-  height: 12px;
+  height: 10px;
 
   background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;

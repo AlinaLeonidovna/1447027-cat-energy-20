@@ -91,7 +91,16 @@
     font-size: 20px;
     line-height: 30px;
 
-    border-bottom: 1px dotted @basic-black-opacity-four;
+    border-bottom: 1px dotted @basic-black-opacity-4;
+  }
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid @basic-black-opacity-4;
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
   }
 }
 
@@ -126,7 +135,17 @@
     height: 34px;
 
     border-radius: 50%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0 1px 3px @basic-black-opacity-16;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 2px 4px @basic-black-opacity-19;
+  }
+
+  &:active {
+    border: 1px solid @bg-green;
+    box-shadow: 0 3px 5px @basic-black-opacity-2;
   }
 }
 

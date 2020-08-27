@@ -4,6 +4,12 @@
   }
 }
 
+.page-header--catalog {
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .page-header--form {
   @media (min-width: @desktop-width) {
     margin: 0;
@@ -80,6 +86,15 @@
   @media (min-width: @desktop-width) {
     width: 202px;
   }
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
 }
 
 .page-header__toggle {

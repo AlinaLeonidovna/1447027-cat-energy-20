@@ -21,6 +21,10 @@
     min-height: 694px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat bottom right, linear-gradient(to right, @basic-white 0, @basic-white 50%, @bg-promo 50%, @bg-promo 100%);
   }
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index-background-desktop@2x.jpg") no-repeat bottom right, linear-gradient(to right, @basic-white 0, @basic-white 50%, @bg-promo 50%, @bg-promo 100%);
+  }
 }
 
 .page-header__wrapper--catalog,
@@ -76,7 +80,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__img {
   width: 189px;
 
   @media (min-width: @tablet-width) {
@@ -86,7 +90,9 @@
   @media (min-width: @desktop-width) {
     width: 202px;
   }
+}
 
+.page-header__logo {
   &[href]:hover,
   &[href]:focus {
     opacity: 0.8;

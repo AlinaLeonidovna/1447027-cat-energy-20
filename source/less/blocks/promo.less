@@ -3,6 +3,11 @@
 
   background: url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to bottom, @bg-promo 0, @bg-promo 305px, @basic-white 305px, @basic-white 100%);
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, @bg-promo 0, @bg-promo 305px, @basic-white 305px, @basic-white 100%);
+    background-size: 320px 305px, auto;
+  }
+
   @media (min-width: @tablet-width) {
     height: 815px;
     margin-bottom: 28px;

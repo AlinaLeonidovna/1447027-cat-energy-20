@@ -121,12 +121,11 @@
     align-items: center;
 
     padding-top: 53px;
-    padding-bottom: 50px;
+    padding-bottom: 55px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 57px;
-    padding-bottom: 50px;
   }
 }
 
@@ -138,13 +137,9 @@
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    margin-right: 156px;
     padding: 0;
+    padding-top: 6px;
     border: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: 413px;
   }
 
   &[href]:hover,
@@ -163,9 +158,15 @@
   border-bottom: 1px solid @light-grey;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-right: auto;
+    margin-left: 156px;
     padding: 0;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 413px;
   }
 }
 

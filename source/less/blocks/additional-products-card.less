@@ -3,18 +3,18 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    width: 100%;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: flex-start;
     margin: 0;
   }
 }
 
 .additional-products-card__title {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
 
   font-weight: 400;
   font-size: 16px;
@@ -24,27 +24,32 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
+    width: 300px;
     margin: 0;
-    margin-right: 25px;
+    margin-right: 15px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+    margin-right: 25px;
   }
 }
 
 .additional-products-card__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
   margin: 0;
   margin-bottom: 14px;
 
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
 
   @media (min-width: @tablet-width) {
-    justify-content: end;
-    width: auto;
+    justify-content: flex-end;
     margin: 0;
 
     font-size: 16px;
@@ -52,17 +57,41 @@
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
-    width: 286px;
+    justify-content: flex-start;
+  }
+}
+
+.additional-products-card__number {
+  margin-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    margin: 0;
+
+    text-align: end;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 200px;
+    margin-right: 45px;
+    text-align: start;
   }
 }
 
 .additional-products-card__price {
-  text-transform: uppercase;
-  text-align: left;
+  margin: 0;
+  margin-left: 20px;
 
-  @media (min-width: @tablet-width) {
-    margin-left: 50px;
+  text-transform: uppercase;
+  text-align: end;
+
+  @media (min-width: @tablet-width) and (max-width: 1439px) {
+    min-width: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+    margin: 0;
   }
 }
 
@@ -71,7 +100,7 @@
   width: 100%;
 
   @media (min-width: @desktop-width) {
-    width: 354px;
-    margin-left: 40px;
+    width: 244px;
+    margin-left: auto;
   }
 }

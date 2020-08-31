@@ -23,14 +23,18 @@
 .card-main-product__img {
   display: block;
   width: 140px;
+  height: 112px;
   margin: 0;
+  object-fit: contain;
 
   @media (min-width: @tablet-width) {
     width: 168px;
+    height: 200px;
   }
 
   @media (min-width: @desktop-width) {
     width: 172px;
+    height: 196px;
   }
 }
 
@@ -91,6 +95,7 @@
 
 .card-main-product__item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: @tablet-width) {
@@ -201,12 +206,4 @@
     font-size: 16px;
     line-height: 18px;
   }
-}
-
-.card-main-product__to-order {
-  width: 100%;
-}
-
-.card-main-product__to-show {
-  width: 100%;
 }

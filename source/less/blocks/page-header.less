@@ -20,10 +20,11 @@
   @media (min-width: @desktop-width) {
     min-height: 694px;
     background: url("../img/index-background-desktop@1x.jpg") no-repeat bottom right, linear-gradient(to right, @basic-white 0, @basic-white 50%, @bg-promo 50%, @bg-promo 100%);
-  }
 
-  @media (min-resolution: 2dppx) {
-    background: url("../img/index-background-desktop@2x.jpg") no-repeat bottom right, linear-gradient(to right, @basic-white 0, @basic-white 50%, @bg-promo 50%, @bg-promo 100%);
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index-background-desktop@2x.jpg") no-repeat bottom right, linear-gradient(to right, @basic-white 0, @basic-white 50%, @bg-promo 50%, @bg-promo 100%);
+      background-size: 720px 694px, auto;
+    }
   }
 }
 
@@ -52,9 +53,16 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 174px;
+    margin: 0;
+    margin-right: 100px;
     padding-right: 0;
     padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    margin-right: 170px;
   }
 }
 

@@ -427,6 +427,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: start;
     margin-bottom: 8px;
   }
 }
@@ -441,7 +442,13 @@
 
   @media (min-width: @desktop-width) {
     width: 225px;
-    margin-right: 16px;
+    margin-right: 100px;
+  }
+
+  &:nth-child(4n) {
+    @media (min-width: @desktop-width) {
+      margin-right: 0;
+    }
   }
 }
 

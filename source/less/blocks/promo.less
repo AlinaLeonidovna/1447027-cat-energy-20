@@ -3,15 +3,18 @@
 
   background: url("../img/index-background-mobile@1x.jpg") no-repeat top center, linear-gradient(to bottom, @bg-promo 0, @bg-promo 305px, @basic-white 305px, @basic-white 100%);
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat top center, linear-gradient(to bottom, @bg-promo 0, @bg-promo 305px, @basic-white 305px, @basic-white 100%);
+    background-size: 320px 305px, auto;
+  }
+
   @media (min-width: @tablet-width) {
-    height: 815px;
-    margin-bottom: 28px;
+    margin-bottom: 0;
 
     background: @basic-white;
   }
 
   @media (min-width: @desktop-width) {
-    height: auto;
     background: transparent;
   }
 }
@@ -54,6 +57,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 470px;
     margin-left: 80px;
   }
 }
@@ -81,6 +85,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 470px;
     margin-left: 80px;
     margin-bottom: 47px;
   }
@@ -95,6 +100,7 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -105,16 +111,28 @@
   }
 }
 
+.promo__img-button {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: static;
+  }
+}
+
 .promo__selection-program {
   width: 100%;
 
   @media (min-width: @tablet-width) {
+    position: absolute;
     width: 244px;
-    margin-left: 82px;
-    margin-top: -581px;
+    top: 28px;
+    left: 82px;
   }
 
   @media (min-width: @desktop-width) {
+    position: static;
     margin-left: 80px;
     margin-top: 0;
   }

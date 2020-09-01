@@ -36,6 +36,12 @@
   }
 }
 
+.page-header__border {
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @border-example;
+  }
+}
+
 .page-header__wrap {
   display: flex;
   justify-content: space-between;
@@ -47,10 +53,6 @@
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
-
-  @media (max-width: @mobile-width-only) {
-    border-bottom: 1px solid @border-example;
-  }
 
   @media (min-width: @tablet-width) {
     width: 174px;

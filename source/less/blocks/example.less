@@ -7,9 +7,25 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: relative;
+    z-index: 1;
+
     min-height: 656px;
 
     border: none;
+  }
+}
+
+.example::after {
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 194px);
+    background: linear-gradient(to right, @basic-grey calc(50% + 325px), @bg-example calc(50% - 325px));
   }
 }
 
@@ -172,7 +188,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    background-color: @bg-example;
+    background-color: @basic-grey;
   }
 }
 

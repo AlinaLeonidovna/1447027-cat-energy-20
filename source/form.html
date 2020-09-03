@@ -26,7 +26,7 @@
             </button>
           </div>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
@@ -66,12 +66,12 @@
             </p>
             <p class="form__row">
               <label class="form__label form__label--text" for="cat-weight">Вес (кг):*</label>
-              <input class="form__control form__control--text form__control--invalid" type="number" min="0" max="100" step="0.1" name="weight" id="cat-weight" placeholder="7" autocomplete="on" required>
+              <input class="form__control form__control--text" type="number" min="0" max="100" step="0.1" name="weight" id="cat-weight" placeholder="7" autocomplete="on" required>
           <!-- При невалидном значении поля добавить тегу input class="form__control--invalid" -->
             </p>
             <p class="form__row">
               <label class="form__label form__label--text" for="cat-years">Возраст (лет):</label>
-              <input class="form__control form__control--text form__control--invalid" type="number" min="0" max="100" step="1" name="years" id="cat-years" placeholder="7" autocomplete="on">
+              <input class="form__control form__control--text" type="number" min="0" max="100" step="1" name="years" id="cat-years" placeholder="7" autocomplete="on">
             </p>
           </div>
         </fieldset>
@@ -98,7 +98,7 @@
       </div>
       <div class="form__title--wrapper">
         <div class="container">
-          <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
+          <h3 class="form__title form__title--contacts">Контактные данные<br> (владельца кота)</h3>
         </div>
       </div>
       <div class="container container--form">
@@ -106,7 +106,7 @@
           <div class="form__contacts">
             <p class="form__row form__row--contacts">
               <label class="form__label form__label--text" for="feedback-email">E-mail:*</label>
-              <input class="form__control form__control--text form__control--text-icon form__control--invalid" type="email" name="email" id="feedback-email" placeholder="kuklachev@gmail.com" autocomplete="on" required>
+              <input class="form__control form__control--text form__control--text-icon" type="email" name="email" id="feedback-email" placeholder="kuklachev@gmail.com" autocomplete="on" required>
           <!-- При невалидном значении поля добавить тегу input class="form__control--invalid" -->
               <svg class="form__img form__img--email" width="18" height="13">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>

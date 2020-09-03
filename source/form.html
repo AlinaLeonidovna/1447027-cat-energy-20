@@ -11,20 +11,22 @@
 <body class="page__body">
   <header class="page-header page-header--form">
     <div class="page-header__wrapper page-header__wrapper--form">
-      <div class="page-header__wrapper-header">
-        <div class="page-header__wrap">
-          <a class="page-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__img" src="img/logo-mobile.svg" width="189" height="38" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
-            </picture>
-          </a>
-          <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-            <span class="page-header__burger"></span>
-          </button>
+        <div class="page-header__wrapper-header">
+        <div class="page-header__border">
+          <div class="page-header__wrap">
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__img" src="img/logo-mobile.svg" width="189" height="38" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
+              </picture>
+            </a>
+            <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+              <span class="page-header__burger"></span>
+            </button>
+          </div>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">
@@ -70,7 +72,6 @@
             <p class="form__row">
               <label class="form__label form__label--text" for="cat-years">Возраст (лет):</label>
               <input class="form__control form__control--text" type="number" min="0" max="100" step="1" name="years" id="cat-years" placeholder="7" autocomplete="on">
-          <!-- При невалидном значении поля добавить тегу input class="form__control--invalid" -->
             </p>
           </div>
         </fieldset>
@@ -97,7 +98,7 @@
       </div>
       <div class="form__title--wrapper">
         <div class="container">
-          <h3 class="form__title form__title--contacts">Контактные данные (владельца кота)</h3>
+          <h3 class="form__title form__title--contacts">Контактные данные<br> (владельца кота)</h3>
         </div>
       </div>
       <div class="container container--form">
@@ -187,7 +188,7 @@
         </div>
       </div>
       <div class="page-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081195149852!2d30.32330650958949!3d59.93864459953058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596378051337!5m2!1sru!2sru" width="320" height="372" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего офиса: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8."></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081195149852!2d30.32330650958949!3d59.93864459953058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596378051337!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего офиса: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8."></iframe>
       </div>
     </div>
     <div class="container">
@@ -216,7 +217,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__img social__img--facebook" width="22" height="22">
+                <svg class="social__img social__img--facebook" width="22" height="18">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>

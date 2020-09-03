@@ -12,19 +12,21 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__wrapper-header">
-        <div class="page-header__wrap">
-          <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__img" src="img/logo-mobile.svg" width="189" height="38" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
-            </picture>
-          </a>
-          <button class="page-header__toggle" type="button" aria-label="Открыть меню">
-            <span class="page-header__burger"></span>
-          </button>
+        <div class="page-header__border">
+          <div class="page-header__wrap">
+            <a class="page-header__logo">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__img" src="img/logo-mobile.svg" width="189" height="38" alt="Логотип интернет-магазина фитнес еды для котиков «Кэт энерджи».">
+              </picture>
+            </a>
+            <button class="page-header__toggle" type="button" aria-label="Открыть меню">
+              <span class="page-header__burger"></span>
+            </button>
+          </div>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open">
           <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__item">
               <a class="main-nav__link main-nav__link--index main-nav__link--active">
@@ -45,16 +47,21 @@
         </nav>
       </div>
       <div class="promo">
-        <div class="container">
-          <div class="promo__wrapper">
-            <h2 class="promo__title">Функциональное<br> питание для котов</h2>
-            <p class="promo__slogan">
-              Занялся собой? Займись котом!
-            </p>
-            <div class="promo__img-button">
+        <div class="promo__wrapper">
+          <div class="promo__slogan-wrap">
+            <div class="container">
+              <h2 class="promo__title">Функциональное<br> питание для котов</h2>
+              <p class="promo__slogan">
+                Занялся собой? Займись котом!
+              </p>
+            </div>
+          </div>
+          <div class="promo__img-button">
+            <div class="container">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x" type="image/webp">
+                <source srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x" type="image/webp">
                 <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
                 <img class="promo__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Корм из серии «Cat Energy Pro» 500 грамм со вкусом курицы.">
@@ -118,7 +125,7 @@
       </div>
     </section>
 
-    <section class="example">
+    <section class="example example--right">
       <div class="example__wrapper">
         <div class="example__content">
           <h2 class="example__title">Живой пример</h2>
@@ -147,6 +154,7 @@
             <picture>
               <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
               <img class="slider__cat slider__cat--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Толстый кот до диеты от «Cat Energy»">
@@ -154,6 +162,7 @@
             <picture>
               <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x" type="image/webp">
+              <source srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
               <img class="slider__cat slider__cat--after" src="img/after-mobile@1x.png" srcset="img/after-tablet@2x.png 2x" width="320" height="240" alt="Худой кот после диеты от «Cat Energy»">
@@ -189,7 +198,7 @@
         </div>
       </div>
       <div class="page-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081195149852!2d30.32330650958949!3d59.93864459953058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596378051337!5m2!1sru!2sru" width="320" height="372" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего офиса: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8."></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6081195149852!2d30.32330650958949!3d59.93864459953058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596378051337!5m2!1sru!2sru" width="320" height="362" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с адресом нашего офиса: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8."></iframe>
       </div>
     </div>
     <div class="container">
@@ -218,7 +227,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Мы в Фейсбуке</span>
-                <svg class="social__img social__img--facebook" width="22" height="22">
+                <svg class="social__img social__img--facebook" width="22" height="18">
                   <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>

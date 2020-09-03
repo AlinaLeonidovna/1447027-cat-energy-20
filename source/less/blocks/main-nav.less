@@ -1,6 +1,4 @@
 .main-nav {
-  display: none;
-
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -17,10 +15,18 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 478px;
+    width: 478px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.main-nav--close {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
 
@@ -39,7 +45,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: flex-start;
 
     background-color: transparent;
   }

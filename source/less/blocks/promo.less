@@ -21,14 +21,18 @@
 .promo__slogan-wrap {
   margin-bottom: 22px;
 
-  background-image: url("../img/index-background-mobile@1x.jpg") no-repeat center bottom, @bg-promo;
+  background-image: url("../img/index-background-mobile@1x.jpg"), @bg-promo;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 
   @media (max-width: @mobile-width-only) {
     min-height: 305px;
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/index-background-mobile@2x.jpg") no-repeat center bottom, @bg-promo;
+    background: url("../img/index-background-mobile@2x.jpg"), @bg-promo;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     background-size: 320px 305px, auto;
   }
 

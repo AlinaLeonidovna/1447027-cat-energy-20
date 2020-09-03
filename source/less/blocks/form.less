@@ -95,6 +95,7 @@
 }
 
 .form__control {
+  flex-grow: 1;
   width: 100%;
   padding: 13px 15px;
 
@@ -103,6 +104,15 @@
 
   background: transparent;
   border: 1px solid @light-grey-7;
+
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &[type="number"]:hover,
+  &[type="number"]:focus {
+    appearance: number-input;
+  }
 }
 
 .form__control--text-icon {
@@ -138,6 +148,8 @@
   &:focus {
     padding: 12px 14px;
     border: 2px solid @dark-grey-4;
+
+    outline: none;
   }
 
   &:focus ~ .form__img {
@@ -145,34 +157,21 @@
   }
 }
 
-.form__control--text[type="number"] {
-  appearance: textfield;
-}
-
-.form__control--text[type="number"]:hover,
-.form__control--text[type="number"]:focus {
-  appearance: number-input;
-}
-
 .form__control--text::placeholder {
   color: @dark-grey-4;
 }
 
-// .form__control--text::-webkit-input-placeholder {
-//   color: @dark-grey-4;
-// }
-
-// .form__control--text::-ms-input-placeholder {
-//   color: @dark-grey-4;
-// }
-
-// .form__control--text::-moz-placeholder {
-//   color: @dark-grey-4;
-// }
-
-.form .form__control--invalid {
+.form .form__control--invalid:required {
   padding: 12px 14px;
   border: 2px solid @bg-error;
+
+  outline: none;
+}
+
+.form__control--invalid {
+  &:focus ~ .form__img {
+    fill: @bg-error;
+  }
 }
 
 .form__fieldset--program {
@@ -334,6 +333,7 @@
 
 .form__title--contacts {
   @media (max-width: @mobile-width-only) {
+    display: inline-block;
     transform: translateY(-32%);
   }
 }
@@ -419,18 +419,6 @@
 .form__control--textarea::placeholder {
   color: @dark-grey-4;
 }
-
-// .form__control--textarea::-webkit-input-placeholder {
-//   color: @dark-grey-4;
-// }
-
-// .form__control--textarea::-ms-input-placeholder {
-//   color: @dark-grey-4;
-// }
-
-// .form__control--textarea::-moz-placeholder {
-//   color: @dark-grey-4;
-// }
 
 .form__fieldset--checkbox {
   margin-bottom: 29px;

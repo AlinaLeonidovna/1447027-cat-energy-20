@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 11px;
+  height: 100%;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -115,11 +116,15 @@
   padding-top: 58px;
 
   @media (min-width: @tablet-width) {
-    min-height: 430px;
+    margin-top: 72px;
     padding-top: 162px;
 
     border: 2px solid @basic-grey;
     background: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 80px;
   }
 
   &::before {
